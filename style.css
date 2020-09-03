@@ -29,5 +29,28 @@
 }
 
 body {
-    background-color: gray;
+    background-color: lightgray;
     }
+
+#hbo_niveau {
+    float:right;
+    padding:20px;
+    width:50%;
+    background-color:rgb(124, 116, 116);
+    height:300px;
+}
+
+#ict_opleiding {
+    float:left;
+    padding:20px;
+    width:44%;
+    background-color:rgb(124, 116, 116);
+    height:300px;
+}
+
+#title_home {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    width:100%;
+    background-color:lightgray;
+}
