@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: darkslategray
+    background-color: #424242;
 }
 .nav {
     float:left;
@@ -30,13 +30,21 @@
 
 body {
     background-color: lightgray;
-    }
+    margin:0;
+}
+
+header {
+    background-image: url('https://i0.wp.com/www.lezer.nl/wp-content/uploads/2018/11/background.jpg?ssl=1');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;    
+}
 
 #hbo_niveau {
-    float:right;
+    float:inline-start;
     padding:20px;
     width:50%;
-    background-color:rgb(124, 116, 116);
+    background-color:#9e9e9e;
     height:300px;
 }
 
@@ -44,13 +52,40 @@ body {
     float:left;
     padding:20px;
     width:44%;
-    background-color:rgb(124, 116, 116);
+    background-color:#9E9E9E;
     height:300px;
 }
 
-#title_home {
+header {
     text-align: center;
-    padding: 20px 0px 20px 0px;
+    padding: 60px 0px 60px 0px;
     width:100%;
     background-color:lightgray;
+    color:white;
 }
+
+#intro {
+    text-align:center;
+}
+
+#gebeurtenissen {
+    float:left;
+    padding: 20px;
+    width:400px;
+    background-color:pink
+}
+
+#hobbies_list {
+    float:left;   
+    padding:20px;
+    width:150px;
+    background-color:orange;
+}
+
+#eigenschappen_list {
+    float:right;
+    padding:20px;
+    width:200px;
+    background-color:blue;
+}
+
