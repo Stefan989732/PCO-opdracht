@@ -45,13 +45,13 @@ header {
     padding:20px;
     width:50%;
     background-color:#9e9e9e;
-    height:300px;
+
 }
 
 #ict_opleiding {
-    float:left;
+    float:inline-end;
     padding:20px;
-    width:44%;
+    width:44.7351%;
     background-color:#9E9E9E;
     height:300px;
 }
@@ -72,20 +72,21 @@ header {
     float:left;
     padding: 20px;
     width:400px;
-    background-color:pink
+    background-color:#9e9e9e
 }
 
 #hobbies_list {
-    float:left;   
+    float:inline-start;
+    text-align:center;   
     padding:20px;
-    width:150px;
-    background-color:orange;
+    width:700px;
+    background-color:#9e9e9e;
 }
 
 #eigenschappen_list {
     float:right;
     padding:20px;
-    width:200px;
-    background-color:blue;
+    width:298px;
+    background-color:#9e9e9e;
 }
 
