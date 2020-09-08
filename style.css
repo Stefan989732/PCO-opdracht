@@ -40,20 +40,25 @@ header {
     background-size:100% 100%;    
 }
 
+#home_grid {
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap:10px;
+}
+
 #hbo_niveau {
     float:inline-start;
     padding:20px;
-    width:50%;
     background-color:#9e9e9e;
-
+    grid-area:1/1/2/2;
 }
 
 #ict_opleiding {
     float:inline-end;
     padding:20px;
-    width:44.7351%;
     background-color:#9E9E9E;
-    height:300px;
+    grid-area:1/2/2/3;
 }
 
 header {
@@ -64,23 +69,37 @@ header {
     color:white;
 }
 
+#profile_grid {
+    min-height:400px;
+    width:100%;
+    display:grid;
+    grid-template-columns: 400px auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap:10px;
+    grid-template-areas: 
+    "intro intro intro"
+    "gebeurtenissen hobbies eigenschappen"
+    "gebeurtenissen hobbies eigenschappen"
+    "gebeurtenissen hobbies eigenschappen"
+    ;
+}
+
 #intro {
     text-align:center;
+    grid-area:intro;
 }
 
 #gebeurtenissen {
-    float:left;
     padding: 20px;
-    width:400px;
-    background-color:#9e9e9e
+    background-color:#9e9e9e;
+    grid-area:gebeurtenissen;
 }
 
 #hobbies_list {
-    float:inline-start;
     text-align:center;   
     padding:20px;
-    width:700px;
     background-color:#9e9e9e;
+    grid-area:hobbies;
 }
 
 #eigenschappen_list {
@@ -88,6 +107,7 @@ header {
     padding:20px;
     width:298px;
     background-color:#9e9e9e;
+    grid-area:eigenschappen;
 }
 
 #study_table {
@@ -96,6 +116,35 @@ header {
 }
 
 #study_links {
-    float:inline-start;
+    float:inline-end;
     padding:20px;
+
+}
+
+progress {
+    border:1;
+    width: 400px;
+    height: 30px;
+    background: darkgray;
+  }
+  
+  progress {
+    border:1;
+    color: black;
+  }
+  
+  progress::-webkit-progress-value {
+    border:1;
+    background: black;
+  }
+  
+  progress::-moz-progress-bar {
+    border:1;
+    background: rgb(100, 35, 35);
+  }
+
+#progress {
+    padding:20px;
+    text-align: center;
+    
 }

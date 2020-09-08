@@ -149,5 +149,19 @@
                 <li><a href="https://github.com/Stefan989732" target="_blank" alt="Github link">Github</a> </li>
             </ul>
     </article>
+    <article id="progress">
+        <label for="bar">Propedeuse voortgang</label>
+        <progress id="bar" min="0" max="60" value="0"></progress>
+        <button onclick="Details()">Voortgang</button>
+
+            <p id="behaalde_EC"></p>
+
+            <script>
+                function Details() {
+                    var x = document.getElementById("bar").value;
+                    document.getElementById("behaalde_EC").innerHTML = x;
+                }
+            </script>
+    </article>
 </body>
 </html> 
